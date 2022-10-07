@@ -1,0 +1,159 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    background: #333b47;
+}
+
+#headerAndColor {
+    width:100vw;
+    height:30vh;
+    background: #2766cc;
+    margin:0;
+    padding-top:.5vh;
+    padding-bottom:1vh;
+}
+
+#midBar {
+    width:100vw;
+    height:3vh;
+    background: white;
+    margin:0;
+}
+
+.welcome {
+    text-align:center;
+    font-size:250%;
+    color:white;
+    margin-top:2vh;
+    margin-bottom:2vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#guessThis {
+    text-align:center;
+    font-size:300%;
+    color:white;
+    font-weight:500;
+    margin:0;
+}
+
+#tools {
+    display:flex;
+    width:50%;
+    margin-left:25vw;
+    height:100%;
+    justify-content: space-between;
+    
+}
+
+#easy, #hard {
+    margin-left:.5vw;
+    margin-right:.5vw;
+    padding: .45vh 1vw .45vh 1vw;
+}
+
+#easy:hover, #hard:hover, #reset:hover {
+    background:#2766cc;
+    color:white;
+}
+
+.toolDesign {
+    font-size:125%;
+    align-self:center;
+    padding: .1vh 1vw .1vh 1vw;
+    color: #2766cc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+}
+
+#tryAgain {
+    font-size:125%;
+    align-self:center;
+    padding: .4vh 1vw .4vh 1vw;
+    color: black;
+    visibility: hidden;
+}
+
+#boxArea {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "box1 box2 box3"
+    "box4 box5 box6";
+    height:55vh;
+    width:45vw;
+    margin:auto;
+    margin-top:4vh;
+    margin-bottom:1vh;
+    row-gap:3%;
+    column-gap:2%;
+}
+
+#box1 {
+    background:green;
+    grid-area: box1;
+    border-radius:50px;;
+}
+
+#box2 {
+    background:green;
+    grid-area: box2;
+    border-radius:50px;;
+}
+
+#box3 {
+    background:green;
+    grid-area: box3;
+    border-radius:50px;;
+}
+
+#box4 {
+    background:green;
+    grid-area: box4;
+    border-radius:50px;;
+}
+
+#box5 {
+    background:green;
+    grid-area: box5;
+    border-radius:50px;;
+}
+
+#box6 {
+    background:green;
+    grid-area: box6;
+    border-radius:50px;;
+}
+
+@media (max-width: 1150px) {
+
+    #boxArea {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "box1 box2 box3"
+        "box4 box5 box6";
+        height:54vw;
+        width:83vw;
+        margin:auto;
+        margin-top:4vh;
+        margin-bottom:1vh;
+        row-gap:3%;
+        column-gap:2%;
+    }
+
+    #tools {
+        display:flex;
+        width:75%;
+        margin-left:12.5vw;
+        height:100%;
+        justify-content: space-between;
+    }
+        
+}
