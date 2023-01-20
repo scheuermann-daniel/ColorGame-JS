@@ -9,10 +9,9 @@ The 'Color' Game is a web application which provides the user with a random RGB 
 Download the ColorGame_JS folder and open the 'ColorGame.html' file.
 
 ## <ins>Screenshots</ins>
-
+### <ins>Game display</ins>
 ![Alt text](Screenshots/start_page.png?raw=true "Game Display")
-
+### <ins>Winning Screen</ins>
 ![Alt text](Screenshots/winning_screen.png?raw=true "Winning Screen")
-
+### <ins>Easy Mode</ins>
 ![Alt text](Screenshots/easy_mode.png?raw=true "Easy Mode")
-
