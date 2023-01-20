@@ -1,5 +1,5 @@
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -52,15 +52,15 @@ body {
 #tryAgain {
     font-size:125%;
     align-self:center;
-    padding: .4vh 1vw .4vh 1vw;
+    padding: 0.5em 0;
     color: black;
     visibility: hidden;
 }
 
 .button {
     font-size:100%;
-    align-self:center;
-    color: #2766cc;
+    align-self:gray;
+    color: gray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight:bold;
     margin: 0 2em;
@@ -72,8 +72,7 @@ body {
 }
 
 .button:hover {
-    background:#2766cc;
-    color:white;
+    color:black;
 }
 
 #boxArea {
@@ -83,8 +82,8 @@ body {
     grid-template-areas:
     "box1 box2 box3"
     "box4 box5 box6";
-    height:30em;
-    width:45em;
+    height:24em;
+    width:36em;
     margin:auto;
     margin-top:4vh;
     margin-bottom:1vh;
@@ -127,3 +126,21 @@ body {
     grid-area: box6;
     border-radius:50px;;
 }
+
+@media screen and (max-width: 750px) {
+    #boxArea {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "box1 box2 box3"
+        "box4 box5 box6";
+        margin:auto;
+        margin-top:2em;
+        margin-bottom:2em;
+        width: 27em;
+        height: 18em;
+        row-gap:3%;
+        column-gap:2%;
+    }
+  }
