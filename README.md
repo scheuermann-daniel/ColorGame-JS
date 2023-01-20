@@ -15,3 +15,10 @@ Download the ColorGame_JS folder and open the 'ColorGame.html' file.
 ![Alt text](Screenshots/winning_screen.png?raw=true "Winning Screen")
 ### <ins>Easy Mode</ins>
 ![Alt text](Screenshots/easy_mode.png?raw=true "Easy Mode")
+
+## <ins>To Do</ins>
+
+1. Add 'High Score' function
+    1. counts how many times you guess correctly in a row
+2. 'Palette Mode'
+    1. Only uses colors from common color palettes
