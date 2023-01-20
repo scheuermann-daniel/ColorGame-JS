@@ -75,7 +75,6 @@ function boxPress(box) {
         // remove it from view
         box.style.visibility = "hidden";
         tryAgain.style.visibility = "visible";
-
     }
 }
 
@@ -95,17 +94,17 @@ function changeColor() {
     if (difficulty === easy) {
         boxAnswer = difficulty[Math.floor(Math.random()*3)]; 
     }
-    else if(difficulty === hard) {
+    else if (difficulty === hard) {
         boxAnswer = difficulty[Math.floor(Math.random()*6)];
     }
 
     // set color of boxes
-    for(var x = 0; x < difficulty.length; x++) {
-        if(difficulty[x] !== boxAnswer) {
+    for (var x = 0; x < difficulty.length; x++) {
+        if (difficulty[x] !== boxAnswer) {
             difficulty[x].style.background = randomColor();
         }
     
-        if(difficulty[x] === boxAnswer) {
+        if (difficulty[x] === boxAnswer) {
             difficulty[x].style.background = guessThis;
         }
     }
@@ -123,10 +122,10 @@ reset.addEventListener("click", function(){
     reset.style.color = "gray";
     gameStatus.textContent = "Welcome to the";
 
-    // make all boxes visible
+    // set all boxes to visible
     for (var x = 0; x < difficulty.length; x++) {
         difficulty[x].style.visibility = "visible";
-ß    }
+    }
 
     // change correct color and set game to not won
     changeColor();
@@ -179,7 +178,7 @@ hardButton.addEventListener("click", function(){
     changeColor();
 
     // set all boxes to visible
-    for(var x = 0; x < difficulty.length; x++) {
+    for (var x = 0; x < difficulty.length; x++) {
         difficulty[x].style.visibility = "visible";
     }
 
