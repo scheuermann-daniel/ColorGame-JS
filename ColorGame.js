@@ -119,8 +119,14 @@ reset.addEventListener("click", function(){
     header.style.background = "#2766cc";
     easyButton.style.visibility = "visible";
     hardButton.style.visibility = "visible";
+    tryAgain.style.visibility = "hidden";
     reset.style.color = "gray";
     gameStatus.textContent = "Welcome to the";
+
+    // make all boxes visible
+    for (var x = 0; x < difficulty.length; x++) {
+        difficulty[x].style.visibility = "visible";
+ß    }
 
     // change correct color and set game to not won
     changeColor();
